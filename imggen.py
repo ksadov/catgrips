@@ -6,14 +6,15 @@ BOTTOM_OFFSET = 20
 MEMEWIDTH = 600
 
 """
-This script uses a local folder catpics/ containing 12500 cat images that I
-downloaded from kaggle. You can get the data yourself here: https://www.kaggle.com/c/dogs-vs-cats/overview
+This script uses a local folder catpics/ containing 1005 cat images that I
+downloaded from kaggle. You can get the data yourself here:
+https://www.kaggle.com/c/dogs-vs-cats/overview
 """
 
 """Returns a string containing the filename of a random cat image.
 """
 def get_cat_img():
-    r = random.randrange(12500)
+    r = random.randrange(1005)
     return f"catpics/{r}.jpg"
 
 """Returns the position to place meme text.
